@@ -4,25 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Egor | Portfolio</title>
-
-  <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
   <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">EGOR</a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-label="Avaa valikko">
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -37,138 +29,110 @@
     </div>
   </nav>
 
+  <main class="main-container">
+    <section class="hero" aria-label="Esittely">
+      <div>
+        <div class="hero-label">Ohjelmistokehittäjäopiskelija</div>
+        <h1>Hei, olen <span>Egor</span></h1>
+        <p>Rakennan moderneja verkkosovelluksia ja kehitän osaamistani ohjelmistokehityksen parissa.</p>
+        <a href="#projektit" class="btn btn-primary">Tutustu projekteihin</a>
+      </div>
+    </section>
 
-  <div class="container">
-
-    <!-- MINUSTA -->
     <section id="minusta">
       <h2>MINUSTA</h2>
       <p>Olen Egor, 18-vuotias ohjelmoinnin harrastaja ja opiskelija. Olen kiinnostunut työharjoittelusta ohjelmistokehityksen ja tietotekniikan parissa. Harrastan ohjelmointia ja videopelejä.</p>
       <p><strong>Vahvuudet:</strong> Uutteruus, tavoiteorientoitunut.<br>
-      <strong>Haaste:</strong> Vähäinen työkokemus alalta - korvaan sen vahvalla motivaatiolla ja omatoimisella oppimisella.</p>
+      <strong>Haaste:</strong> Vähäinen työkokemus alalta – korvaan sen vahvalla motivaatiolla ja omatoimisella oppimisella.</p>
     </section>
 
     <hr>
 
-    <!-- OSAAMINEN -->
     <section id="osaaminen">
       <h2>OSAAMINEN</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>PHP</li>
-        <li>Python</li>
-        <li>C#</li>
-        <li>JavaScript</li>
-        <li>MySQL</li>
-        <li>WordPress</li>
-        <li>Git & GitHub</li>
-        <li>3D-mallinnus</li>
-        <li>React JS</li>
-        <li>TypeScript</li>
-      </ul>
-
-      <h3>KIELITAITO</h3>
-      <table class="table table-bordered">
-        <thead>
-          <tr><th>Kieli</th><th>Taitotaso</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Suomi</td><td>Hyvä</td></tr>
-          <tr><td>Venäjä</td><td>Äidinkieli</td></tr>
-          <tr><td>Englanti</td><td>Erinomainen</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <hr>
-
-    <!-- KOULUTUS -->
-    <section id="koulutus">
-      <h2>KOULUTUS & TYÖKOKEMUS</h2>
-      <ul>
-        <li>Peruskoulu - valmistunut</li>
-        <li>Toinen aste - Savon ammattiopisto, Tieto- ja viestintätekniikka (valm. kevät 2027)</li>
-        <li>Nion Solutions Oy - Ohjelmistokehittäjä (12.2.2026 - 27.5.2026)</li>
-      </ul>
-    </section>
-
-    <hr>
-
-    <!-- PROJEKTIT -->
-    <section id="projektit">
-      <h2>PROJEKTIT</h2>
-
-      <div class="projekti-lista">
-        <!-- PROJEKTI 1 -->
-        <div class="projekti">
-          <img src="img/site3.png" alt="Project 1">
-          <h3><a href="https://tvt-linux.tvtedu.fi/~213582/DailyTrack/public/index.php" target="_blank">DailyTrack</a></h3>
-          <p>Päivittäisten tapojen seuraaminen</p>
-          <a href="https://github.com/adscats/DailyTrack" target="_blank">Katso GitHubissa</a>
+      <p class="section-intro">Teknologiat ja työkalut, joita käytän projekteissani.</p>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3><i class="fa fa-code"></i> Web-kehitys</h3>
+          <ul class="skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>React JS</li><li>TypeScript</li></ul>
         </div>
-        <!-- PROJEKTI 2 -->
-        <div class="projekti">
-          <img src="img/fintrack.jpg" alt="Project 2">
-          <h3>FinTrack</h3>
-          <p>Henkilökohtainen Budjettiseuranta</p>
-          <a href="https://github.com/Xupie/FinTrack" target="_blank">Katso GitHubissa</a>
+        <div class="skill-group">
+          <h3><i class="fa fa-database"></i> Ohjelmointi ja data</h3>
+          <ul class="skills"><li>Python</li><li>C#</li><li>MySQL</li><li>Git &amp; GitHub</li></ul>
         </div>
-        <!-- PROJEKTI 3 -->
-        <div class="projekti">
-          <img src="img/site1.jpg" alt="Project 3">
-          <h3>Taitaja 2025 semifinaali</h3>
-          <p>Taitaja 2025 semifinaali tehtävä</p>
-          <a href="https://github.com/Xupie/taitaja2025" target="_blank">Katso GitHubissa</a>
-        </div>
-        <!-- PROJEKTI 4 -->
-        <div class="projekti">
-          <img src="img/site2.jpg" alt="Project 4">
-          <h3><a href="https://tvt-linux.tvtedu.fi/~213582/index.php?getAll=">Webcite for cars</a></h3>
-          <p>Verkkosivusto, jossa on tietokanta autojen seurantaan</p>
-          <a href="https://github.com/kendr3w/websiteforcars" target="_blank">Katso GitHubissa</a>
+        <div class="skill-group">
+          <h3><i class="fa fa-cube"></i> Muut työkalut</h3>
+          <ul class="skills"><li>WordPress</li><li>3D-mallinnus</li></ul>
         </div>
       </div>
-      <p>
-        <a href="https://github.com/adscats" target="_blank" class="btn btn-primary">
-          <i class="fa fa-github"></i> Tutustu projekteihini GitHubissa
-        </a>
-      </p>
-    </section>
 
+      <div class="languages">
+        <h3><i class="fa fa-language"></i> KIELITAITO</h3>
+        <div class="language-list">
+          <div class="language-item"><strong>Suomi</strong><span>Hyvä</span></div>
+          <div class="language-item"><strong>Venäjä</strong><span>Äidinkieli</span></div>
+          <div class="language-item"><strong>Englanti</strong><span>Erinomainen</span></div>
+        </div>
+      </div>
+    </section>
 
     <hr>
 
-    <!-- YHTEYS -->
+    <section id="koulutus">
+      <h2>KOULUTUS &amp; TYÖKOKEMUS</h2>
+      <ul>
+        <li>Peruskoulu – valmistunut</li>
+        <li>Toinen aste – Savon ammattiopisto, Tieto- ja viestintätekniikka (valm. kevät 2027)</li>
+        <li>Nion Solutions Oy – Ohjelmistokehittäjä (12.2.2026–27.5.2026)</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="projektit">
+      <h2>PROJEKTIT</h2>
+      <div class="projekti-lista">
+        <article class="projekti">
+          <img src="img/site3.png" alt="DailyTrack-projektin esikatselu">
+          <h3><a href="https://tvt-linux.tvtedu.fi/~213582/DailyTrack/public/index.php" target="_blank" rel="noopener noreferrer">DailyTrack</a></h3>
+          <p>Päivittäisten tapojen seuraaminen</p>
+          <a href="https://github.com/adscats/DailyTrack" target="_blank" rel="noopener noreferrer">Katso GitHubissa</a>
+        </article>
+        <article class="projekti">
+          <img src="img/helpdesk.png" alt="Helpdesk-projektin esikatselu">
+          <h3><a href="https://tvt-linux.tvtedu.fi/~213636/helpdesk/web/" target="_blank" rel="noopener noreferrer">Helpdesk</a></h3>
+          <p>Helpdesk-palvelu</p>
+          <a href="https://github.com/Savo-Consortium-of-Education/tiimi1-egor-tatu" target="_blank" rel="noopener noreferrer">Katso GitHubissa</a>
+        </article>
+        <article class="projekti">
+          <img src="img/site1.jpg" alt="Taitaja 2025 -projektin esikatselu">
+          <h3>Taitaja 2025 semifinaali</h3>
+          <p>Taitaja 2025 semifinaalitehtävä</p>
+          <a href="https://github.com/Xupie/taitaja2025" target="_blank" rel="noopener noreferrer">Katso GitHubissa</a>
+        </article>
+        <article class="projekti">
+          <img src="img/fintrack.jpg" alt="FinTrack-projektin esikatselu">
+          <h3>FinTrack</h3>
+          <p>Henkilökohtainen budjettiseuranta</p>
+          <a href="https://github.com/Xupie/FinTrack" target="_blank" rel="noopener noreferrer">Katso GitHubissa</a>
+        </article>
+      </div>
+      <p><a href="https://github.com/adscats" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa fa-github"></i> Tutustu projekteihini GitHubissa</a></p>
+    </section>
+
+    <hr>
+
     <section id="yhteys">
       <h2>OTA YHTEYS</h2>
-      <h4>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="social-icon" alt="Instagram">
-        Instagram: <a href="https://instagram.com/annihilence" target="_blank">@annihilence</a>
-      </h4>
-      <h4>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" class="social-icon" alt="Email">
-        Sähköposti: <a href="mailto:egor@kendr3w.com">egorleliushok@gmail.com</a>
-      </h4>
-      <h4>
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/user.png" class="social-icon" alt="User">
-        Yhteystiedot: Egor Leliushok
-      </h4>
-      <h4>
-        <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" class="social-icon" alt="Phone">
-        Puhelin: <a href="tel:+358401441932">+358401441932</a>
-      </h4>
+      <h4><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="social-icon" alt="Instagram"> Instagram: <a href="https://instagram.com/annihilence" target="_blank" rel="noopener noreferrer">@annihilence</a></h4>
+      <h4><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" class="social-icon" alt="Sähköposti"> Sähköposti: <a href="mailto:egorleliushok@gmail.com">egorleliushok@gmail.com</a></h4>
+      <h4><img src="https://img.icons8.com/ios-filled/50/ffffff/user.png" class="social-icon" alt="Henkilö"> Yhteystiedot: Egor Leliushok</h4>
+      <h4><img src="https://img.icons8.com/ios-filled/50/000000/phone.png" class="social-icon" alt="Puhelin"> Puhelin: <a href="tel:+358401441932">+358401441932</a></h4>
     </section>
-    
+  </main>
 
-  </div>
+  <footer><p>&copy; 2026 Egor | Portfolio</p></footer>
 
-
-  <footer>
-    <p>&copy; 2026 Egor | Portfolio</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
